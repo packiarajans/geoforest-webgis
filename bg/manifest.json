@@ -1,0 +1,26 @@
+﻿[
+    {
+        "file":  "01_tiger.jpg",
+        "label":  "Bengal Tiger"
+    },
+    {
+        "file":  "02_elephant.jpg",
+        "label":  "Asian Elephant"
+    },
+    {
+        "file":  "03_canopy.jpg",
+        "label":  "Forest Canopy"
+    },
+    {
+        "file":  "04_flora.jpg",
+        "label":  "Native Flora"
+    },
+    {
+        "file":  "05_deer.jpg",
+        "label":  "Spotted Deer"
+    },
+    {
+        "file":  "06_leopard.jpg",
+        "label":  "Indian Leopard"
+    }
+]

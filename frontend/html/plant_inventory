@@ -1,0 +1,166 @@
+<div class="page-header">
+    <h2>Plant Inventory</h2>
+</div>
+
+<div class="card">
+
+    <input type="hidden" id="plantId">
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <label>Observation No</label>
+
+            <input id="txtObservationNo" class="form-control" readonly>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>Species</label>
+
+            <select id="cmbSpecies" class="form-select">
+            </select>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>Beat</label>
+
+            <select id="cmbBeat" class="form-select">
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-4">
+
+            <label>Condition</label>
+
+            <select id="cmbCondition" class="form-select">
+            </select>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>Age Class</label>
+
+            <input id="txtAgeClass" class="form-control">
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>Observed On</label>
+
+            <input type="date" id="dtObservedOn" class="form-control">
+
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-3">
+
+            <label>Latitude</label>
+
+            <input id="txtLatitude" class="form-control">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <label>Longitude</label>
+
+            <input id="txtLongitude" class="form-control">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <label>GPS Accuracy</label>
+
+            <input id="txtAccuracy" class="form-control">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <label>Observed By</label>
+
+            <input id="txtObservedBy" class="form-control">
+
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-12">
+
+            <label>Remarks</label>
+
+            <textarea id="txtRemarks" class="form-control" rows="3">
+            </textarea>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-6">
+
+            <label>Photo</label>
+
+            <input type="file" id="filePhoto" class="form-control">
+
+        </div>
+
+    </div>
+
+    <div class="mt-4">
+
+        <button id="btnSave" class="btn btn-success">
+
+            Save
+
+        </button>
+
+        <button id="btnUpdate" class="btn btn-warning">
+
+            Update
+
+        </button>
+
+        <button id="btnDelete" class="btn btn-danger">
+
+            Delete
+
+        </button>
+
+        <button id="btnClear" class="btn btn-secondary">
+
+            Clear
+
+        </button>
+
+    </div>
+
+</div>
+
+<div id="map" style="
+        height:600px;
+        margin-top:20px;
+        border:1px solid #ccc;">
+</div>
+
+<table id="tblPlants" class="table table-striped mt-4" width="100%">
+</table>

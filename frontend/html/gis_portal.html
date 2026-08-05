@@ -1,0 +1,283 @@
+<!-- ========================================================= -->
+<!-- GeoForest Enterprise -->
+<!-- GIS Portal -->
+<!-- ========================================================= -->
+
+<div class="container-fluid p-0">
+
+    <!-- ===================================================== -->
+    <!-- GIS TOOLBAR -->
+    <!-- ===================================================== -->
+
+    <div class="card border-0 rounded-0 shadow-sm">
+
+        <div class="card-header bg-success text-white">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <i class="bi bi-globe-central-south-asia"></i>
+
+                    <strong>GeoForest Enterprise GIS Portal</strong>
+
+                </div>
+
+                <div class="btn-group">
+
+                    <button id="btnHomeExtent" class="btn btn-light btn-sm">
+
+                        <i class="bi bi-house"></i>
+
+                        Home
+
+                    </button>
+
+                    <button id="btnRefreshMap" class="btn btn-light btn-sm">
+
+                        <i class="bi bi-arrow-repeat"></i>
+
+                        Refresh
+
+                    </button>
+
+                    <button id="btnPrintMap" class="btn btn-light btn-sm">
+
+                        <i class="bi bi-printer"></i>
+
+                        Print
+
+                    </button>
+
+                    <button id="btnFullscreen" class="btn btn-light btn-sm">
+
+                        <i class="bi bi-arrows-fullscreen"></i>
+
+                        Full Screen
+
+                    </button>
+
+                    <button id="btn3DToggle" class="btn btn-light btn-sm" title="Switch to the 3D globe">
+
+                        <i class="bi bi-badge-3d"></i>
+
+                        3D
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- MAIN -->
+    <!-- ===================================================== -->
+
+    <div class="row g-0">
+
+        <!-- LEFT PANEL -->
+
+        <div class="col-lg-3">
+
+            <div class="card rounded-0 border-0 h-100">
+
+                <div class="card-body">
+
+                    <h6>
+
+                        <i class="bi bi-layers"></i>
+
+                        Layers
+
+                    </h6>
+
+                    <hr>
+
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="checkbox" id="chkDivisions" checked>
+
+                        <label class="form-check-label">
+
+                            Forest Divisions
+
+                        </label>
+
+                    </div>
+
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="checkbox" id="chkRanges" checked>
+
+                        <label class="form-check-label">
+
+                            Forest Ranges
+
+                        </label>
+
+                    </div>
+
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="checkbox" id="chkBeats" checked>
+
+                        <label class="form-check-label">
+
+                            Forest Beats
+
+                        </label>
+
+                    </div>
+
+                    <div class="form-check mb-4">
+
+                        <input class="form-check-input" type="checkbox" id="chkPlants" checked>
+
+                        <label class="form-check-label">
+
+                            Plants
+
+                        </label>
+
+                    </div>
+
+                    <h6>
+
+                        <i class="bi bi-search"></i>
+
+                        Search
+
+                    </h6>
+
+                    <input id="txtSearchPlant" class="form-control mb-3" placeholder="Scientific/Common Name">
+
+                    <h6>
+
+                        <i class="bi bi-filter"></i>
+
+                        Filter
+
+                    </h6>
+
+                    <select id="cmbDivisionGIS" class="form-select mb-2">
+
+                    </select>
+
+                    <select id="cmbRangeGIS" class="form-select mb-2">
+
+                    </select>
+
+                    <select id="cmbBeatGIS" class="form-select mb-3">
+
+                    </select>
+
+                    <button id="btnClearFilter" class="btn btn-secondary w-100">
+
+                        Clear Filter
+
+                    </button>
+
+                    <hr>
+
+                    <h6>
+
+                        <i class="bi bi-map"></i>
+
+                        Legend
+
+                    </h6>
+
+                    <div id="legendContainer">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MAP -->
+
+        <div class="col-lg-9">
+
+            <div id="mapWrapper" style="position:relative; height:82vh;">
+
+                <div id="map" style="height:82vh;">
+
+                </div>
+
+                <!-- Cesium 3D globe overlay (hidden until the 3D button is clicked) -->
+
+                <div id="cesiumContainer"
+                     style="position:absolute; inset:0; display:none; z-index:500;">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- STATUS BAR -->
+    <!-- ===================================================== -->
+
+    <div class="bg-dark text-white px-3 py-2 d-flex justify-content-between">
+
+        <span>
+
+            Coordinates :
+
+            <span id="lblCoordinates">
+
+                --
+
+            </span>
+
+        </span>
+
+        <span>
+
+            Scale :
+
+            <span id="lblScale">
+
+                --
+
+            </span>
+
+        </span>
+
+        <span>
+
+            Selection :
+
+            <span id="lblSelection">
+
+                None
+
+            </span>
+
+        </span>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- Loading -->
+<!-- ===================================================== -->
+
+<div id="loadingSpinner" class="spinner-overlay d-none">
+
+    <div class="spinner-border text-success" style="width:4rem;height:4rem">
+
+    </div>
+
+</div>

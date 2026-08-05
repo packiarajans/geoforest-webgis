@@ -1,0 +1,37 @@
+2026-07-22T12:28:22+02:00
+CA bundle: C:/xampp/php/extras/ssl/cacert-windows.pem
+S: 220 smtp.gmail.com ESMTP 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+C: EHLO geoforest.local
+S: 250-smtp.gmail.com at your service, [2409:40f4:127:40b9:d058:811b:4a2c:8cf0]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO geoforest.local
+S: 250-smtp.gmail.com at your service, [2409:40f4:127:40b9:d058:811b:4a2c:8cf0]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250 SMTPUTF8
+C: AUTH LOGIN
+S: 334 VXNlcm5hbWU6
+C: ***
+S: 334 UGFzc3dvcmQ6
+C: ***
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<p15rajan@gmail.com>
+S: 250 2.1.0 OK 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+C: RCPT TO:<p15rajan@gmail.com>
+S: 250 2.1.5 OK 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+C: DATA
+S: 354 Go ahead 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+S: 250 2.0.0 OK  1784716101 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 5a478bee46e88-3147e081985sm8259045eec.23 - gsmtp
+

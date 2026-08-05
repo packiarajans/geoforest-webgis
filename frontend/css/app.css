@@ -1,0 +1,230 @@
+/******************************************************************************
+GeoForest Enterprise
+File : frontend/css/app.css
+******************************************************************************/
+
+:root {
+
+    --primary: #2E7D32;
+    --primary-dark: #1B5E20;
+    --primary-light: #66BB6A;
+    --background: #F4F8F4;
+    --white: #FFFFFF;
+    --border: #D7E6D7;
+    --text: #2C3E50;
+
+}
+
+body {
+
+    background: var(--background);
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    color: var(--text);
+
+}
+
+/***********************************************************
+HEADER
+************************************************************/
+
+.app-header {
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+
+}
+
+/***********************************************************
+CARDS
+************************************************************/
+
+.card {
+
+    border: none;
+
+    border-radius: 10px;
+
+}
+
+.card-header {
+
+    font-weight: 600;
+
+}
+
+/***********************************************************
+FORM
+************************************************************/
+
+.form-control {
+
+    border-radius: 6px;
+
+}
+
+.form-select {
+
+    border-radius: 6px;
+
+}
+
+.form-control:focus,
+
+.form-select:focus {
+
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 .15rem rgba(46, 125, 50, .25);
+
+}
+
+/***********************************************************
+BUTTONS
+************************************************************/
+
+.btn {
+
+    min-width: 120px;
+
+    margin-right: 8px;
+
+}
+
+.btn-success {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+}
+
+.btn-success:hover {
+
+    background: var(--primary-dark);
+
+}
+
+/***********************************************************
+TABLE
+************************************************************/
+
+.table thead {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.table-hover tbody tr:hover {
+
+    background: #E8F5E9;
+
+}
+
+/***********************************************************
+DATATABLE
+************************************************************/
+
+.dataTables_wrapper {
+
+    margin-top: 10px;
+
+}
+
+.dataTables_filter {
+
+    display: none;
+
+}
+
+/***********************************************************
+LOADING SPINNER
+************************************************************/
+
+.spinner-overlay {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255, 255, 255, .75);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+}
+
+/***********************************************************
+BADGES
+************************************************************/
+
+.badge {
+
+    padding: 10px 15px;
+
+}
+
+/***********************************************************
+RESPONSIVE
+************************************************************/
+
+@media(max-width:768px) {
+
+    .btn {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+
+    }
+
+    .app-header {
+
+        text-align: center;
+
+    }
+
+}
+
+/***********************************************************
+UTILITY
+************************************************************/
+
+.required {
+
+    color: red;
+
+}
+
+.text-right {
+
+    text-align: right;
+
+}
+
+.hidden {
+
+    display: none;
+
+}

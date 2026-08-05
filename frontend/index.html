@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GeoForest Enterprise</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/portal.css" rel="stylesheet">
+
+    <link href="css/gis-portal.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="logo">
+
+                🌳 GeoForest Enterprise
+
+            </div>
+
+            <div>
+
+                Welcome,
+                <strong>PACKIARAJAN</strong>
+
+            </div>
+
+        </header>
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <ul>
+
+                <li>
+                    <a href="#" data-page="dashboard.html">
+
+                        <i class="bi bi-speedometer2"></i>
+
+                        Dashboard
+
+                    </a>
+                </li>
+
+                <li class="menu-title">
+
+                    Plants
+
+                </li>
+
+                <li>
+
+                    <a href="#" data-page="plant_species.html">
+
+                        <i class="bi bi-tree"></i>
+
+                        Species
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#" data-page="plant_inventory.html">
+
+                        <i class="bi bi-pin-map"></i>
+
+                        Inventory
+
+                    </a>
+
+                </li>
+
+                <li class="menu-title">
+
+                    Forest
+
+                </li>
+
+                <li>
+                
+                    <a href="#" data-page="gis_portal.html">
+                    
+                    <i class="bi bi-globe-central-south-asia"></i>
+
+                    GIS Portal
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#" data-page="forest_divisions.html">
+
+                        <i class="bi bi-diagram-3"></i>
+
+                        Divisions
+
+                    </a>
+
+                </li>
+
+                
+                <li>
+
+                    <a href="#" data-page="forest_ranges.html">
+
+                        <i class="bi bi-signpost-split"></i>
+
+                        Ranges
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#" data-page="forest_beats.html">
+
+                        <i class="bi bi-map"></i>
+
+                        Beats
+
+                    </a>
+
+
+                </li>
+
+                <li>
+
+                    <a href="#" data-page="reports.html">
+
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+
+                        Reports
+
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Content -->
+
+        <main id="content">
+
+        </main>
+
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.bootstrap5.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
+    <!-- Application -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+
+    <!-- Utility Module-->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="js/notecam.js"></script>
+
+    <!-- Modules -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/plant_species.js"></script>
+    <script src="js/plant_inventory.js"></script>
+
+    <!-- GIS Modules 
+    <script src="js/gis/gis_portal.js"></script>
+    <script src="js/gis/gis_basemap.js"></script>
+    <script src="js/gis/gis_layers.js"></script>
+    <script src="js/gis/gis_events.js"></script>
+    <script src="js/gis/gis_toolbar.js"></script>  -->
+
+
+
+    <!-- Portal -->
+    <script src="js/portal.js"></script>
+
+    <!-- GIS 3D (Cesium) -->
+    <script src="js/gis/gis_cesium.js"></script>
+
+    <!---------Loading Framework -->
+
+    <script src="js/core/gf-config.js"></script>
+
+    <script src="js/components/gf-map.js"></script>
+
+</body>
+
+</html>
