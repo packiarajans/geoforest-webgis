@@ -1,0 +1,17 @@
+# --- Secrets (never commit) ---
+frontend/api/mail_config.php
+
+# --- Logs ---
+*.log
+frontend/api/mail_debug.log
+
+# --- Local backups (created during edits) ---
+*.bak
+*.bak_*
+*.bak2_*
+*.bak_preavg
+_backup_*/
+assets_bak_*/
+
+# --- Dependencies / build junk ---
+node_modules/

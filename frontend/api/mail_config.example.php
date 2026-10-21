@@ -31,7 +31,7 @@ return [
     "port"      => 587,
     "secure"    => "tls",        // "tls" (STARTTLS), "ssl", or "" for none
     "user"      => "p15rajan@gmail.com",   // the Gmail address
-    "pass"      => "REDACTED-REVOKED-APP-PASSWORD",           // <-- PASTE THE 16-CHARACTER APP PASSWORD HERE
+    "pass"      => "PUT-YOUR-16-CHAR-APP-PASSWORD-HERE",           // <-- PASTE THE 16-CHARACTER APP PASSWORD HERE
 
     "from_addr" => "p15rajan@gmail.com",
     "from_name" => "GeoForest Enterprise — Sathyamangalam Tiger Reserve",
